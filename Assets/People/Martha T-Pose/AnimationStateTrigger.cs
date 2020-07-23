@@ -31,9 +31,17 @@ public class AnimationStateTrigger : MonoBehaviour
             charAnim.SetTrigger("RunningJump");
         }
         //walking
-        if (Input.GetKeyDown(KeyCode.V))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             charAnim.SetTrigger("Walking");
+        }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            charAnim.SetTrigger("P");
+        }
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            charAnim.SetTrigger("O");
         }
     }
 }
